@@ -1,0 +1,236 @@
+/* Define estilos globais para redefinir margens, preenchimentos e caixas de elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #333; /* Define a cor de fundo da barra de navegação */
+    overflow: hidden; /* Controla o fluxo dos elementos filhos */
+}
+
+/* Estilo para os links na barra de navegação */
+.navbar a {
+    float: left; /* Alinha os links à esquerda */
+    display: block; /* Define os links como elementos de bloco */
+    color: white; /* Define a cor do texto para branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 14px 16px; /* Define o espaçamento interno dos links */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Estilo para os links na barra de navegação quando o mouse passa por cima */
+.navbar a:hover {
+    color: #FA1313; /* Define a cor dos links para vermelho ao passar o mouse */
+}
+
+/* Estilo para as seções de conteúdo */
+/* Estilo para a classe .content */
+.content {
+    background-image: url('/Imagem/Carro_web.jpg'); /* Define uma imagem de fundo */
+    background-size: 70%; /* Define o tamanho da imagem de fundo para 70% do elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-color: #000; /* Define a cor de fundo para preto */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 100vh; /* Define a altura igual à altura da janela de visualização */
+    position: relative; /* Define a posição relativa para posicionamento de elementos filhos */
+    color: white; /* Define a cor do texto para branco */
+    font-size: 24px; /* Define o tamanho da fonte */
+    text-align: right; /* Alinha o texto à direita */
+    padding: 20px; /* Define o espaçamento interno */
+}
+
+/* Estilo para a classe .content1 */
+.content1 {
+    background-image: url('/Imagem/Aluguel_carro.jpeg'); /* Define uma imagem de fundo */
+    background-color: #000; /* Define a cor de fundo para preto */
+    background-position: center; /* Centraliza a imagem de fundo */
+    height: 70vh; /* Define a altura igual à altura da janela de visualização */
+    position: relative; /* Define a posição relativa para posicionamento de elementos filhos */
+    color: white; /* Define a cor do texto para branco */
+    font-size: 24px; /* Define o tamanho da fonte */
+    text-align: right; /* Alinha o texto à direita */
+    padding: 20px; /* Define o espaçamento interno */
+}
+
+/* Estilo para a classe .content2 */
+.content2 {
+    background-image: url('/Imagem/Parceiros.jpeg'); /* Define uma imagem de fundo */
+    background-size: 100%; /* Define o tamanho da imagem de fundo para cobrir todo o elemento */
+    height: 70vh; /* Define a altura igual à altura da janela de visualização */
+    position: relative; /* Define a posição relativa para posicionamento de elementos filhos */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 20px; /* Define o espaçamento interno */
+}
+
+/* Estilo para a classe .content3 */
+.content3 {
+    background-image: url('/Imagem/compra.jpg'); /* Define uma imagem de fundo */
+    background-size: 100%; /* Define o tamanho da imagem de fundo para cobrir todo o elemento */
+    height: 70vh; /* Define a altura igual à altura da janela de visualização */
+    position: relative; /* Define a posição relativa para posicionamento de elementos filhos */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 20px; /* Define o espaçamento interno */
+}
+
+/* Estilo para a classe .text */
+.text {
+    position: absolute; /* Define a posição absoluta para posicionamento preciso */
+    bottom: 0; /* Alinha o elemento à parte inferior do pai */
+    right: 0; /* Alinha o elemento à direita do pai */
+    margin-bottom: 10%; /* Define a margem inferior como 10% */
+    margin-right: 10%; /* Define a margem direita como 10% */
+    background-color: #000000; /* Define a cor de fundo para preto */
+    padding: 10px; /* Define o espaçamento interno */
+    font-size: 4vh; /* Define o tamanho da fonte em relação à altura da janela de visualização */
+}
+
+/* Estilo para a classe .text1 */
+.text1 {
+    position: absolute; /* Define a posição absoluta para posicionamento preciso */
+    bottom: 0; /* Alinha o elemento à parte inferior do pai */
+    right: 0; /* Alinha o elemento à direita do pai */
+    margin-bottom: 10%; /* Define a margem inferior como 10% */
+    margin-right: 10%; /* Define a margem direita como 10% */
+    padding: 10px; /* Define o espaçamento interno */
+    font-size: 6vh; /* Define o tamanho da fonte em relação à altura da janela de visualização */
+    color: #ffffff; /* Define a cor do texto para preto */
+}
+
+/* Estilo para a classe .text2 */
+.text2 {
+    color: #ffffff; /* Define a cor do texto para branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 20%; /* Define a margem superior como 20% */
+    font-size: 4vh; /* Define o tamanho da fonte em relação à altura da janela de visualização */
+}
+
+/* Estilo para a classe .text3 */
+.text3 {
+    color: #000000; /* Define a cor do texto para preto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 20%; /* Define a margem superior como 20% */
+    font-size: 5vh; /* Define o tamanho da fonte em relação à altura da janela de visualização */
+}
+
+
+/* Estilo para os botões */
+.button {
+    background-color: #FA1313; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto para branco */
+    border-radius: 10px; /* Define uma borda arredondada */
+    padding: 7px; /* Define o espaçamento interno */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Define a margem superior */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Define como bloco para ocupar a largura disponível */
+}
+
+/* Estilo para os botões quando o mouse passa por cima */
+.button:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
+}
+
+/* Estilo para permitir rolagem suave na página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para a seção "Início" com id 'inicio' */
+#inicio {
+    padding: 5%; /* Define o espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+    display: flex; /* Usa layout flexbox */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Alinha verticalmente ao centro */
+    align-items: center; /* Alinha horizontalmente ao centro */
+    height: 100%; /* Define a altura igual à altura da janela de visualização */
+    font-size: 1.5vw; /* Define o tamanho da fonte em relação à largura da janela de visualização */
+}
+
+/* Estilo para os elementos de cabeçalho na seção "Início" */
+#inicio h1 {
+    margin-bottom: 1vh; /* Define a margem inferior */
+}
+
+/* Estilo para os elementos de parágrafo na seção "Início" */
+#inicio p {
+    margin-top: 1vh; /* Define a margem superior */
+}
+
+/* Estilo para o título "Carros Populares" */
+.carros_popular h1 {
+    margin-bottom: 5vh; /* Define a margem inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para a exibição de grade dos carros */
+.car-grid {
+    display: grid; /* Define um layout de grade */
+    grid-template-columns: repeat(1, 1fr); /* Uma coluna em telas pequenas */
+    grid-gap: 20px; /* Define o espaçamento entre as colunas */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Centraliza na tela */
+    max-width: 800px; /* Define a largura máxima */
+}
+
+/* Estilos para as imagens dos carros na exibição de grade */
+.car img {
+    max-width: 100%; /* Define a largura máxima das imagens */
+    height: auto; /* Define a altura automática para manter a proporção */
+    padding: 5px; /* Define o espaçamento interno */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de escala */
+}
+
+/* Efeito de escala quando o mouse passa por cima das imagens dos carros */
+.car img:hover {
+    transform: scale(1.3); /* Aumenta a escala em 10% */
+    cursor: pointer; /* Altera o cursor */
+}
+
+/* Media query para telas maiores */
+@media (min-width: 500px) {
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em telas médias */
+    }
+}
+
+/* Media query para telas ainda maiores */
+@media (min-width: 1024px) {
+    .car-grid {
+        grid-template-columns: repeat(3, 1fr); /* Três colunas em telas maiores */
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin-top: 100px; /* Define a margem superior */
+    background-color: #333; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    padding: 20px 0; /* Define o espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos para a seção "Sobre a Empresa" no rodapé */
+.company-info, .contact-info {
+    width: 50%; /* Define a largura das seções */
+    padding: 20px; /* Define o espaçamento interno */
+    display: inline-block; /* Alinha ao lado um do outro */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilos para os links no rodapé */
+.footer-content a {
+    color: #fff; /* Define a cor dos links */
+    text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Estilos para os links no rodapé quando o mouse passa por cima */
+.footer-content a:hover {
+    text-decoration: underline; /* Sublinha os links no hover */
+}

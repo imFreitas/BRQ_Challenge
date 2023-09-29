@@ -1,0 +1,154 @@
+/* Define estilos globais para redefinir margens, preenchimentos e caixas de elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-image: url(/Imagem/Carro_cadastro.jpg); /* Define uma imagem de fundo */
+    background-size: 100%; /* Define o tamanho da imagem de fundo para cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-color: #000; /* Define a cor de fundo para preto */
+}
+
+/* Estilo para a classe .cadastro */
+.cadastro {
+    color: #fff; /* Define a cor do texto para branco */
+    margin-left: 10%; /* Define a margem esquerda de 10% */
+    margin-top: 10%; /* Define a margem superior de 10% */
+}
+
+/* Estilo para a classe .content */
+.content {
+    padding: 20px; /* Define o preenchimento interno */
+    border-radius: 5px; /* Define uma borda arredondada */
+    margin-bottom: 20px; /* Define a margem inferior de 20px */
+}
+
+/* Estilo para o texto de espaço reservado (placeholder) em campos de entrada */
+::placeholder {
+    color: #fff; /* Define a cor do texto de espaço reservado para branco */
+}
+
+/* Estilo para campos de entrada */
+.input {
+    display: flex; /* Usa layout flexbox */
+    flex-direction: column; /* Alinha elementos verticalmente */
+    max-width: 80%; /* Define a largura máxima dos campos de entrada */
+}
+
+/* Estilo para rótulos (labels) de campos de entrada */
+.input label {
+    color: #fff; /* Define a cor do rótulo para branco */
+    margin-bottom: 5px; /* Define a margem inferior de 5px */
+}
+
+/* Estilo para campos de entrada de texto */
+.input input {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    padding: 10px; /* Define o preenchimento interno */
+    background-color: #000; /* Define a cor de fundo para preto */
+    opacity: 40%; /* Define a opacidade do campo de entrada */
+    border: none; /* Remove a borda */
+    border-bottom: 1px solid #fff; /* Adiciona uma borda na parte inferior */
+    color: #fff; /* Define a cor do texto para branco */
+    margin-bottom: 10px; /* Define a margem inferior de 10px */
+}
+
+/* Estilo para o link */
+.link {
+    text-decoration: none; /* Remove a decoração de texto do link */
+    color: #FA1313; /* Define a cor do link */
+    margin-bottom: 10px; /* Define a margem inferior de 10px */
+}
+
+/* Estilo para botões */
+button {
+    background-color: #FA1313; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão para branco */
+    border-radius: 10px; /* Define uma borda arredondada */
+    padding: 7px; /* Define o preenchimento interno */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Define a margem superior de 10px */
+    width: 80%; /* Define a largura do botão */
+}
+
+/* Estilo para botões e links quando o cursor passa por cima */
+button:hover,
+.link:hover {
+    opacity: 80%; /* Reduz a opacidade ao passar o cursor */
+}
+
+/* Estilo para um elemento com a classe .popup */
+.popup {
+    position: fixed; /* Define uma posição fixa na tela */
+    width: 80%; /* Define a largura do popup */
+    max-width: 400px; /* Define a largura máxima do popup */
+    top: 50%; /* Define a posição vertical no centro */
+    left: 50%; /* Define a posição horizontal no centro */
+    transform: translate(-50%, -50%); /* Move o popup para o centro da tela */
+    padding: 5%; /* Define o espaçamento interno */
+    background-color: #d4d4d4; /* Define a cor de fundo do popup */
+    border-radius: 10px; /* Define uma borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    z-index: 2; /* Define a camada z para ficar acima de outros elementos */
+    display: flex; /* Usa layout flexbox */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o botão de fechar o popup */
+.close-button {
+    color: white; /* Define a cor do texto para branco */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    width: 70px; /* Define a largura do botão */
+    font-size: 1.4vw; /* Define o tamanho da fonte como uma porcentagem da largura da janela de visualização */
+    margin-top: 10px; /* Define a margem superior de 10px */
+    background-color: transparent; /* Remove a cor de fundo padrão do botão */
+    border: none; /* Remove a borda do botão */
+}
+
+/* Estilo para o fundo do popup */
+.popup-background {
+    position: fixed; /* Define uma posição fixa na tela */
+    top: 0; /* Define a posição superior */
+    left: 0; /* Define a posição esquerda */
+    width: 100%; /* Define a largura como 100% da largura da tela */
+    height: 100%; /* Define a altura como 100% da altura da tela */
+    backdrop-filter: blur(5px); /* Aplica um desfoque no fundo */
+    z-index: 1; /* Define a camada z para ficar abaixo do popup */
+}
+
+/* Estilo para links */
+a {
+    cursor: pointer; /* Altera o cursor ao passar sobre o link */
+}
+
+/* Estilo para links quando o cursor passa por cima */
+a:hover {
+    opacity: 80%; /* Reduz a opacidade ao passar o cursor */
+}
+
+/* Estilo para links em formato de botão */
+.link-button {
+    background-color: #FA1313; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão para branco */
+    border-radius: 10px; /* Define uma borda arredondada */
+    padding: 7px; /* Define o preenchimento interno */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Define a margem superior de 10px */
+    display: block; /* Define como bloco para ocupar a largura disponível */
+    text-align: center; /* Centraliza horizontalmente */
+    text-decoration: none; /* Remove a decoração de texto */
+    width: 80%; /* Define a largura do botão */
+}
+
+/* Estilo para links em formato de botão quando o cursor passa por cima */
+.link-button:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o cursor */
+}

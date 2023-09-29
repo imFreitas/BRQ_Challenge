@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.brq.com/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style_cadastro.css">
+    <title>Projeto BRQ - FIAP</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="cadastro">
+        <h1>Para começar, preencha com seus dados. </h1>
+
+        <form>
+            <div class="content">
+                <div class="input">
+                    <input type="email" placeholder="Email" autocomplete="email">
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="Senha" autocomplete="new-password">
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="Confirme sua senha" autocomplete="new-password">
+                </div>
+                <div class="input">
+                    <input type="tel" placeholder="Telefone">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Nome completo">
+                </div>
+                <div class="input">
+                    <br>
+                    <label for="CNH">Adicione sua CNH</label>
+                    <input type="file" id="CNH">
+                    <div><a onclick=openPopup() type="button" id="popupButton">Por que pedimos foto da sua CNH?</a>
+                    </div>
+                    <br>
+                </div>
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Concordo com os termos</label>
+                <div><a href="index1.html" class="link-button">Criar conta</a></div>
+            </div>
+    </div>
+    </form>
+
+
+
+    </div>
+
+</body>
+
+</html>

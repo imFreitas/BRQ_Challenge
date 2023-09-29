@@ -1,0 +1,133 @@
+/* Define estilos globais para redefinir margens, preenchimentos e caixas de elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    background-color: #000; /* Define a cor de fundo para preto */
+    background-image: url(/Imagem/Carro_Inicio.jpg); /* Define uma imagem de fundo */
+    background-size: 65%; /* Define o tamanho da imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+}
+
+/* Estilo para cabeçalho (h1) */
+h1 {
+    color: #fff; /* Define a cor do texto para branco */
+}
+
+/* Estilo para parágrafos (p) */
+p {
+    color: #fff; /* Define a cor do texto para branco */
+    font-size: 20px; /* Define o tamanho da fonte */
+}
+
+/* Estilo para a classe .Bemvindo */
+.Bemvindo {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilo para a classe .Inicio */
+.Inicio {
+    float: right; /* Alinha o elemento à direita */
+    margin-right: 5%; /* Define a margem direita de 5% */
+    margin-top: 20%; /* Define a margem superior de 20% */
+}
+
+/* Estilo para formulário */
+form {
+    display: flex; /* Usa layout flexbox */
+    flex-direction: column; /* Alinha elementos verticalmente */
+    max-width: 300px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+/* Estilo para o texto de espaço reservado (placeholder) em campos de entrada */
+::placeholder {
+    color: #fff; /* Define a cor do texto de espaço reservado para branco */
+}
+
+/* Estilo para campos de entrada */
+.input input {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    padding: 10px; /* Define o preenchimento interno */
+    background-color: #000; /* Define a cor de fundo para preto */
+    opacity: 40%; /* Define a opacidade do campo de entrada */
+    border: none; /* Remove a borda */
+    border-bottom: 1px solid #fff; /* Adiciona uma borda na parte inferior */
+    color: #fff; /* Define a cor do texto para branco */
+}
+
+/* Estilo para rótulos (labels) de campos de entrada */
+.input label {
+    color: #fff; /* Define a cor do rótulo para branco */
+    margin-bottom: 5px; /* Define a margem inferior de 5px */
+}
+
+/* Estilo para o link "Esqueceu a senha?" */
+.link {
+    text-decoration: none; /* Remove a decoração de texto do link */
+    color: #FA1313; /* Define a cor do link */
+    margin-bottom: 10px; /* Define a margem inferior de 10px */
+}
+
+/* Estilo para botões */
+button {
+    background-color: #FA1313; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão para branco */
+    border-radius: 10px; /* Define a borda arredondada */
+    padding: 7px; /* Define o preenchimento interno */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Define a margem superior de 10px */
+    width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+/* Estilo para links e botões quando o cursor passa por cima */
+button,
+.link:hover {
+    opacity: 80%; /* Reduz a opacidade ao passar o cursor */
+}
+
+/* Estilo para links em formato de botão */
+.link-button {
+    background-color: #FA1313; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão para branco */
+    border-radius: 10px; /* Define a borda arredondada */
+    padding: 7px; /* Define o preenchimento interno */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin-top: 10px; /* Define a margem superior de 10px */
+    margin-bottom: 10px; /* Define a margem inferior de 10px */
+    display: block; /* Define como bloco para ocupar a largura disponível */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    text-decoration: none; /* Remove a decoração de texto */
+    width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+/* Estilo para links em formato de botão quando o cursor passa por cima */
+.link-button:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o cursor */
+}
+
+/* Estilo para um elemento com ID 'popup' */
+#popup {
+    position: absolute; /* Define uma posição absoluta */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    top: 50%; /* Define a posição vertical no centro */
+    left: 50%; /* Define a posição horizontal no centro */
+    transform: translate(-50%, -50%); /* Move o elemento para o centro */
+    box-shadow: 0px 0px 50px 2px #000; /* Adiciona sombra */
+    padding-bottom: 5px; /* Define o preenchimento inferior */
+}
+
+/* Estilo para um elemento com ID 'close' */
+#close {
+    width: 100px; /* Define a largura */
+    background-color: #cc0033; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto para branco */
+    border: none; /* Remove a borda */
+    margin-left: 5px; /* Define a margem esquerda */
+}
